@@ -7,8 +7,8 @@ A lightweight Linux container runtime in C with a long-running supervisor and a 
 
 | Name | SRN |
 |------|-----|
-| SIDDU SANGANNA SHIRASAGI | PES1UG25CS846 |
-| Shravanakumar Patil | PES1UG24CS692  |
+| Sanskar Ghenappagol | PES1UG24CS614 |
+| Sachin B R | PES1UG25CS839  |
 
 ---
 
