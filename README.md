@@ -127,7 +127,8 @@ make -C boilerplate ci
 ## 3. Demo Screenshots
 
 ### Screenshot 1 — Multi-container supervision
-<img width="1016" height="220" alt="image" src="https://github.com/user-attachments/assets/d8ab27a0-2ba0-4eea-a612-6524c8c4cb1f" />
+<img width="950" height="92" alt="one" src="https://github.com/user-attachments/assets/defb17d6-d9d0-4c0f-95c6-0abcf0189921" />
+
 
 <img width="1016" height="293" alt="image" src="https://github.com/user-attachments/assets/0c914fc8-3399-450b-9136-f338b0f5c413" />
 
