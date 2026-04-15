@@ -129,58 +129,56 @@ make -C boilerplate ci
 ### Screenshot 1 — Multi-container supervision
 <img width="950" height="92" alt="one" src="https://github.com/user-attachments/assets/defb17d6-d9d0-4c0f-95c6-0abcf0189921" />
 
-
-<img width="1016" height="293" alt="image" src="https://github.com/user-attachments/assets/0c914fc8-3399-450b-9136-f338b0f5c413" />
+<img width="1282" height="223" alt="two" src="https://github.com/user-attachments/assets/aa233df0-86f3-46c5-a4a4-e0827f27fc2d" />
 
 
 Caption: Both containers running simultaneously under a single supervisor process.
 
 ### Screenshot 2 — Metadata tracking
 
-<img width="1016" height="165" alt="image" src="https://github.com/user-attachments/assets/d6eea543-d4f3-4f44-abd1-89e7d72b9015" />
+<img width="836" height="123" alt="three" src="https://github.com/user-attachments/assets/34b21fd3-0c7a-48ad-9550-8321807dd491" />
 
 Caption: `ps` command showing container ID, host PID, state, start time, memory limits, and termination reason.
 
 ### Screenshot 3 — Bounded-buffer logging
 
-<img width="1016" height="248" alt="image" src="https://github.com/user-attachments/assets/f86f8e34-ab9f-4fe9-b6eb-7222dfec6c66" />
+<img width="1154" height="148" alt="four" src="https://github.com/user-attachments/assets/2b6fd92a-5900-46bf-9468-572e5f17bf5b" />
 
 
 Caption: Container stdout captured via pipe, passed through bounded buffer, and written to log file by consumer thread.
 
 ### Screenshot 4 — CLI and IPC
 
-<img width="1016" height="143" alt="image" src="https://github.com/user-attachments/assets/193d70c9-7975-4caf-a405-036d50b2bf37" />
-
+<img width="938" height="106" alt="fives" src="https://github.com/user-attachments/assets/9c83c945-efa6-4630-b081-cc9a64b4cdc7" />
 
 Caption: CLI client connects to supervisor over UNIX domain socket at `/tmp/mini_runtime.sock`, sends request, receives response.
 
 ### Screenshot 5 — Soft-limit warning
 
-<img width="1016" height="584" alt="image" src="https://github.com/user-attachments/assets/81acbd40-cba4-4a04-a6ca-f58df7644c9d" />
+<img width="1340" height="290" alt="six" src="https://github.com/user-attachments/assets/5a7995bc-1c9a-4a5c-ad01-68b502400dde" />
 
 
 Caption: Kernel module logs a warning when container RSS exceeds soft limit of 10 MiB.
 
 ### Screenshot 6 — Hard-limit enforcement
 
-<img width="1016" height="471" alt="image" src="https://github.com/user-attachments/assets/6912a7a6-1ecd-4158-866b-9a22644c1f0b" />
+<img width="959" height="208" alt="seven" src="https://github.com/user-attachments/assets/15b72158-4b7e-4b18-8fa6-8c46cf4605bf" />
 
 
 Caption: Kernel module sends SIGKILL when RSS exceeds 20 MiB hard limit. Supervisor metadata shows `hard_limit_killed`.
 
 ### Screenshot 7 — Scheduling experiment
 
-<img width="1016" height="275" alt="image" src="https://github.com/user-attachments/assets/b4435fcb-86ee-40a9-b910-7cf8dbe5e298" />
-<img width="1016" height="275" alt="image" src="https://github.com/user-attachments/assets/4134da2e-101f-4f41-b2c4-06e417433b14" />
-<img width="1016" height="275" alt="image" src="https://github.com/user-attachments/assets/a12b91a3-7257-429c-8861-61b27b72a0bc" />
+<img width="1118" height="206" alt="eight" src="https://github.com/user-attachments/assets/87871975-05c5-499f-90d1-ea83e2bed5d5" />
+<img width="1118" height="206" alt="eight" src="https://github.com/user-attachments/assets/ccabb694-0508-4459-bd3a-5c67824eba19" />
 
 
 Caption: c2 (nice -5, higher priority) received larger CPU time slices. c1 (nice 10) was preempted, visible as gaps in progress reporting.
 
 ### Screenshot 8 — Clean teardown
 
-<img width="1016" height="272" alt="image" src="https://github.com/user-attachments/assets/2487a6d7-4083-422a-814a-c05279daeef0" />
+<img width="831" height="80" alt="nine" src="https://github.com/user-attachments/assets/3a2f8c23-b437-4dd9-b418-a7758dd98949" />
+<img width="975" height="136" alt="ten" src="https://github.com/user-attachments/assets/a32599b4-0d32-4718-baea-2ef4781eea35" />
 
 
 Caption: Supervisor stops all containers, joins logging thread, and frees resources. No zombie processes remain.
